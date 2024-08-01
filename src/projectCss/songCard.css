@@ -1,0 +1,48 @@
+.song-card-box{
+    display: flex;
+    padding-top: 12px;
+    justify-content: center;
+    width: clamp(100px, 250px, 300px); 
+    height: clamp(125px, 275px, 325px);
+    background-color: rgba(255, 255, 255,0.2);
+    cursor: pointer ;
+    z-index: 9;
+    border-radius: 8px;
+    
+}
+
+.inner-song-card{
+    height: clamp(75px, 225px, 275px);  
+    width: clamp(75px, 225px, 275px);
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 8px;
+    z-index: 10;
+}
+.song-card-picture{
+    width: 100%;
+    height: 100%;
+}
+
+.album-cover-images{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.album-cover-images:hover{
+    opacity: 0.6;
+}
+
+.song-details > p{
+    margin: 0;
+    padding: 0;
+}
+.song-name{
+    color: white;
+    font-size: 0.7rem;
+}
+.artist-name{
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 0.69rem;
+}

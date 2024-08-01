@@ -1,0 +1,233 @@
+:root{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+
+body{
+  color:lightblue;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb{
+  background:#1965EF;
+}
+
+
+main{
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 200ms ease;
+}
+
+.navbar-nav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+/*this code is to make sure the last element of the list is on the bottom*/
+.nav-item{
+  width: 100%;
+}
+
+.nav-item:last-child{
+  margin-top: auto;
+}
+/*this code makes the icons smaller and proportinla and changes the text color*/
+.nav-link{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 600ms;
+}
+/*when hover it changes the bg color of the icon and changes icon color*/
+.nav-link:hover{
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+.nav-bar{
+  width: 5rem;
+height: 100vh;
+position: fixed;
+background-color: var(--bg-primary);
+transition: width 200ms ease;
+  z-index:1;
+
+}
+/*this code removes the text*/
+.linktext{
+  display: none;
+  margin-left: 1rem;
+  font-size:20px;
+
+}
+/*this code adjusts the size of tyhe images and makes them all proportional and in the middle*/
+.nav-link svg{
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+/*nav bar animation*/
+/* THE POSITION WAS SET TO ABSOLUTE IF IT CAUSES PROBLEMS LOOK HERE!!!!!!!!!!!!!!!!!! */
+.navbar:hover{
+  width: 18rem;
+  display: block;
+  position:absolute;
+  z-index: 1;
+  margin-top:0;
+}
+/*makes the navv bar pop up on hover to show the text*/
+.navbar:hover .linktext{
+  display: block;
+}
+.navbar:hover #mainicon{
+  filter: opacity(0.9);
+  transform: scale(50%) rotate(-360deg);
+  cursor:default;
+
+}
+/*change icon color on hover*/
+#navicons{
+  color:#1965EF;
+}
+#navicons{
+  transition: 600ms;
+}
+.logo{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #1965EF;
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  width: 100%;
+  transition: 600ms;
+  cursor:default;
+}
+
+.logo svg{
+  transform: rotate(0deg);
+  transition: transform 600ms;
+  cursor:default;
+}
+
+/* AIRI MUSIC ICON */
+#mainicon{
+  user-select: none;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  transform: rotate(0deg);
+  transition: transform 900ms;
+  transform: scale(50%);
+  filter: opacity(0.9);  
+  cursor:default;
+
+}
+
+
+
+.navigation{
+  position:fixed;
+  top:0;
+  right: 1vw;
+  width: 13vw;
+  display:flex;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  z-index:99;
+}
+.navigation a{
+  text-align:center;
+  position:relative;
+  font-size:22px;
+  color:var(--text-secondary);
+  text-decoration:none;
+  font-weight:500;
+}
+.navigation .loginbtn{
+  width:130px;
+  height:50px;
+  background:transparent;
+  border: 2px solid #fff;
+  outline:none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size:23px;
+  color:var(--text-secondary);
+  font-weight:500;
+  transition:.3s;
+}
+.navigation .loginbtn:hover{
+  background:#fff;
+  color:#162938;
+}
+.navigation .regLogin{
+  width:130px;
+  height:50px;
+  background:transparent;
+  border: 2px solid #fff;
+  outline:none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size:23px;
+  color:var(--text-secondary);
+  font-weight:500;
+  margin-left:40px;
+  transition:.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation .regLogin:hover{
+  background:#fff;
+  color:#162938;
+}
+.navigation a::after{
+  content: '';
+  position:absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius:5px;
+  transform: scaleX(0);
+  transition: transform .5s;
+
+}
+.navigation a:hover::after{
+  transform: scaleX(1);
+}

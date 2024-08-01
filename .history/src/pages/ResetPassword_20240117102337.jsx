@@ -1,0 +1,63 @@
+import React from 'react'
+import { useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import axios from 'axios'
+import '../projectCss/login.css'
+import emailjs from "emailjs-com";
+
+function ResetPassword() {
+  const [password, setPassword] = useState()
+  const navigate = useNavigate()
+  const {id, token} = useParams()
+
+  axios.defaults.withCredentials = true;
+  const handleSubmit = (e) => {
+      e.preventDefault()
+      axios.post(`http://localhost:443/reset-password/${id}/${token}`, {password})
+      .then(res => {
+          if(res.data.Status === "Success") {
+              navigate('/login')
+             
+          }
+      }).catch(err => console.log(err))
+  }
+return (
+
+    <>
+        <div className="header-title">
+          <img id="mainicon" src="src/icons/Airpfp.png" />
+          <span className="header-text">Air Music</span>
+      </div>
+      <div className='form-box-holder'>
+        <div className="form-box">
+          <h1>Enter Password</h1>
+          <div className="input-box">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input
+              type="password"
+              placeholder="   "
+              style={{ fontFamily: 'Montserrat', fontSize: '1em'}}
+              name="password"
+             onChange={(e) => setPassword(e.target.value)}
+              id="email"
+            />
+          </div>
+        
+          
+          <button onClick={handleSubmit} className="btnlogin" style={{ fontFamily: 'Montserrat', fontSize:'1.5em'}}>Reset Password</button>       
+          <div className="login-register">
+            
+            <p className='dont-have-acc-text'>
+              Remember your password?{" "}
+              <Link to="/login" className="register-link">
+                Log In Here
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default ResetPassword;

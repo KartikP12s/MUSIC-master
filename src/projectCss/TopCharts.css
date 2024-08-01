@@ -1,0 +1,41 @@
+.main-container{
+    background-color: #23232E;
+    position: absolute;
+    width: 70vw;
+    height: 80vh;
+    left: 18.5rem;
+    top:5rem;
+}
+.container-header{
+    display: flex;
+}
+select.genre-selector{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: #23232E;
+    border: 2px solid transparent;
+    width: auto;
+}
+
+.container-title{
+    font-family: 'Montserrat';
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    text-align: left;
+}
+.container-chart-holder{
+    padding: 12px;
+    background-color: #404055;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+    overflow-y: scroll;
+
+}

@@ -1,0 +1,154 @@
+
+.container1{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 8px;
+    background-color: aqua;
+}
+.pfpContainer{
+    width: 50vw;
+    height: 50vw;
+    background-color: #BDBDBD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.picContainer{
+    display: flex;
+    width:100%;
+    height:18%;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1E1F22;
+}
+.profilePicture{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right:5px;
+    
+}
+.edit-section{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-top: 20px;
+}
+.email-container{
+    display: flex;
+    gap: 10px;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.userInfo-container{
+    width: 100%;
+    height: 62%;
+    background-color:#1E1F22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.displayName, .email{
+    color: #fff;
+}
+.displayName1{
+    color: #fff;
+    font-size: 1.3em;
+    margin: 10px 0;
+
+}
+.modalContainer.active{
+    display:flex;
+}
+.edit-button-1{
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+.edit-button{
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+}
+.edit-button-1{
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+    width: 10vw;
+    
+}
+.edit-button:hover{
+    background-color: #4752c4;
+}
+.useremail{
+    margin-right: 10vw;
+}
+.changepassword{
+    display: flex;
+    width:37.7%;
+    height:53%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.container3{
+    width: 80%;
+    height: 80%;
+    background-color: #2b2d31;
+    border-radius: 8px;
+    padding: 20px;
+}
+.changepass-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.changepass-form > p{
+    margin:0;
+}
+.blankspace{
+    width: 100%;
+    height: 20%;
+}
+.reset-pass{
+    display: none;
+}

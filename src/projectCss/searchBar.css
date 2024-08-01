@@ -1,0 +1,41 @@
+.search-bar-area {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    height: 5rem;
+    left: 18.5rem;
+    z-index: 0;
+}
+.search-box-container{
+    width: 30vw;
+    height: 2vw;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color:white;
+    background-color: #23232E;
+    display: flex;
+    align-items: center;
+}
+form{
+    width: 100%;
+}
+input.search-bar-input {
+    font-family: "Montserrat";
+    width: 98%;
+    z-index: 10;
+    border: 2px solid transparent;
+    color:white;
+    background-color: #23232E;
+}
+.search-bar-input:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255,0.5);
+}
+
+
+ion-icon {
+    padding-left: 7px;
+    font-size: 1.2vw;
+    color: white;
+  }

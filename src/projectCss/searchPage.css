@@ -1,0 +1,145 @@
+body{
+    background-color: black;
+}
+
+.search-results-main-container{
+    position: absolute;
+    width: 70vw;
+    height: 90vh;
+    left: 18.5rem;
+    top:5rem;
+    display: flex;
+    flex-direction: row;
+}
+.all-song-results-container{
+    width: 50%;
+    height: 100%;
+}
+.top-song-result-container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-song-card{
+    width: 95%;
+    height: 91%;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TopTrackCard-song-card-picture{
+    width: 95%;
+    height: 91%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.TopTrackCard-song-details{
+    width: 53%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.TopTrackCard-album-cover-images{
+    width: 47%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.TopTrackCard-song-details > p{
+    margin: 0;
+    padding: 0;
+}
+.TopTrackCard-song-name{
+    color: white;
+    font-size: 1.5rem;
+}
+.TopTrackCard-artist-name{
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1rem;
+}
+
+.other-songs-result-container{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other-song-card-holder{
+    width: 95%;
+    height: 91%;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.TrackCard-container{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 95%;
+    height: 95%;
+}
+
+.TrackCard-song-card-picture{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 8px;
+    gap: 12px;
+    height: 16.666%;
+    width: 100%;
+    padding-top: 7px;
+}
+
+.TrackCard-album-cover-images{
+    width: 12%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.TrackCard-song-details{
+    width: 88%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.TrackCard-song-details > p{
+    margin: 0;
+    padding: 0;
+}
+.TrackCard-song-name{
+    color: white;
+    font-size: 1.5rem;
+}
+.TrackCard-artist-name{
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1rem;
+}
+
+.all-artists-result-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-artists-card-holder{
+    width: 97%;
+    height: 97%;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 8px;
+}
